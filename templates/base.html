@@ -79,9 +79,10 @@
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <a href="#" class="dropdown-item">Product Management</a> {# TODO: Replace with actual URL #}
+                                <a href="#" class="dropdown-item">Enroll</a> {# TODO: Replace with actual URL #}
                             {% endif %}
-                            <a href="#" class="dropdown-item">My Profile</a> {# TODO: Replace with actual URL #}
+                            <a href="#" class="dropdown-item">Workouts</a> {# TODO: Replace with actual URL #}
+                            <a href="#" class="dropdown-item">View Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                         {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
