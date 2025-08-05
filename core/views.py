@@ -52,4 +52,3 @@ def profile_edit(request):
     return render(request, 'core/profile_edit.html', {'form': form})
 
 
-
